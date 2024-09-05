@@ -1,4 +1,4 @@
-import { TaskItemNew, TaskItemDone } from './TaskItem';
+import { TaskItem } from './TaskItem';
 
 const TaskList = () => {
     return (
@@ -18,11 +18,29 @@ const TaskList = () => {
                 </div>
             </div>
             <div className="mb-16 mt-4 space-y-2">
-                <TaskItemNew />
-                <TaskItemNew />
-                <TaskItemNew />
-                <TaskItemDone />
-                <TaskItemDone />
+                <TaskItem
+                    title="Organize Desk"
+                    content="Tidy up papers and organize supplies. Ensure everything is in its proper place for better productivity."
+                />
+                <TaskItem
+                    title="Plan Weekly Meals"
+                    content="Create a meal plan for the week, considering healthy options. Prepare a grocery list to shop accordingly."
+                />
+                <TaskItem
+                    isDone
+                    title="Call the Electrician"
+                    content="Schedule an appointment to fix the kitchen lights. Follow up on availability and estimated costs."
+                />
+                <TaskItem
+                    isDone
+                    title="Update Portfolio Website"
+                    content="Add the latest project and adjust design elements. Ensure that the mobile version is functioning smoothly."
+                />
+                <TaskItem
+                    isDone
+                    title="Water the Plants"
+                    content="Check moisture levels in the indoor plants and water them accordingly. Don't forget to mist the ferns!"
+                />
             </div>
         </div>
     );
